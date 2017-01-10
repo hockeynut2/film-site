@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-size: 24px;
+}
+
+.num1frame {
+    width: 1000px;
+    height: 1000px;
+    margin-bottom: 30px;
+}
+
+.indexlist {
+    font-style: italic;
+    align-content: center;
+    font-size: 32px;
+}
+
+.slide {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+}

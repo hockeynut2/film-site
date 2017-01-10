@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Kornbluth Film Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link type="image/icon" rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+<h1><a href="/">Film Exploration Project</a></h1>
+<div style="text-align: center">
+    <a href="num1.html"><button class="btn btn-default">1</button></a>
+    <a href="num2.html"><button class="btn btn-default">2</button></a>
+    <a href="num3.html"><button class="btn btn-default">3</button></a>
+    <a href="num4.html"><button class="btn btn-default active">4</button></a>
+    <a href="num5.html"><button class="btn btn-default">5</button></a>
+    <h3>Exploration 4: Rogue One: A Star Wars Story</h3>
+    <p>I actually watched Rogue One (2h 13m) twice in the last two weeks:
+        once with friends during opening weekend, and again with my family
+        last night. This may have been my favorite Star Wars movie. Yes, it
+        was that good. The special effects were great, like the prequels,
+        but the story was as well, like the originals. There were also great
+        references to the original trilogy, including Darth Vader’s appearance,
+        the Death Star, and Princess Leia. One thing I picked up was the number
+        of establishing shots. Because Rogue One takes place on several planets
+        (not seen in other movies) it’s very helpful to the viewers to know
+        where the characters are going next.</p>
+    <img src="img/rogueonestub.png">
+    <div class="slideshow">
+        <img class="slide" src="img/jedha.jpeg">
+        <img class="slide" src="img/scarif.jpeg">
+        <img class="slide" src="img/eadu.png">
+        <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+        <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slide");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length} ;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+            }
+        </script>
+    </div>
+</div>
+</body>
+
+</html>
